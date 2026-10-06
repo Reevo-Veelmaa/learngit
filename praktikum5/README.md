@@ -10,6 +10,16 @@ Käivitasin terminalis `gedit`i. `Ctrl+Z` peatas protsessi (`Stopped`, signaal `
 
 Allikas: [POSIX – tööde juhtimine](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html).
 
+## Ülesanne 5-2 – SIGHUP ja nohup
+
+Käivitasin `gedit &` käsuga protsessi 16670. Pärast `kill -SIGHUP 16670` protsess lõppes ja `ps -p 16670` näitas ainult päist.
+
+![gediti sulgemine SIGHUP-signaaliga](ulesanne5-2-sighup.png)
+
+Käsuga `nohup gedit &` käivitatud protsess 17116 jäi pärast `kill -SIGHUP 17116` alles. Seda näitab `ps -p 17116` väljund.
+
+![nohupiga käivitatud gedit jääb alles](ulesanne5-2-nohup.png)
+
 ## Ülesanne 5-5 – Windowsi sõnumid
 
 Logifail: [teatedOut.txt](teatedOut.txt). Logis on näha hiireklikke, akna maksimeerimine, suuruse taastamine ja sulgemine.
