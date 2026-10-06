@@ -31,6 +31,18 @@ ps -axu | grep daemon | tr -s ' ' | cut -d ' ' -f11- | grep daemon | grep -v '^g
 
 ![Programminimed ja parameetrid](ulesanne5-3.png)
 
+## Ülesanne 5-4 – IP-aadressi eraldamine
+
+```bash
+ip a | grep 'inet ' | grep -v '127.0.0.1/' | tr -s ' ' | cut -d ' ' -f3 | cut -d '/' -f1
+ip a | grep 'inet ' | grep -v '127.0.0.1/' | tr -s ' ' | cut -d ' ' -f3 | cut -d '/' -f1 > ipaddress.txt
+xargs -n1 ping -c 2 < ipaddress.txt
+```
+
+Käsk eraldab IPv4-aadressi, jättes välja loopback-aadressi. Väljade järgi lõikamine sobib eri pikkusega aadressidele. Tulemuseks sain `10.0.2.15`, mis salvestati faili `ipaddress.txt`. Ping saatis 2 paketti ja sai 2 vastust, paketikaotus oli 0%.
+
+![IP-aadressi eraldamine ja kontroll pingiga](ulesanne5-4.png)
+
 ## Ülesanne 5-5 – Windowsi sõnumid
 
 Logifail: [teatedOut.txt](teatedOut.txt). Logis on näha hiireklikke, akna maksimeerimine, suuruse taastamine ja sulgemine.
