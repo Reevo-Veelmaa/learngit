@@ -2,6 +2,14 @@
 
 Reevo Veelmaa
 
+## Ülesanne 5-1 – Protsessi peatamine ja jätkamine
+
+Käivitasin terminalis `gedit`i. `Ctrl+Z` peatas protsessi (`Stopped`, signaal `SIGTSTP`). Käsk `fg` jätkas peatatud programmi tööd esiplaanil, saates sellele `SIGCONT`-signaali.
+
+![gediti peatamine ja jätkamine terminalis](ulesanne5-1.png)
+
+Allikas: [POSIX – tööde juhtimine](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html).
+
 ## Ülesanne 5-5 – Windowsi sõnumid
 
 Logifail: [teatedOut.txt](teatedOut.txt). Logis on näha hiireklikke, akna maksimeerimine, suuruse taastamine ja sulgemine.
