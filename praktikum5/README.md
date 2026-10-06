@@ -20,6 +20,17 @@ Käsuga `nohup gedit &` käivitatud protsess 17116 jäi pärast `kill -SIGHUP 17
 
 ![nohupiga käivitatud gedit jääb alles](ulesanne5-2-nohup.png)
 
+## Ülesanne 5-3 – ps-i väljundi töötlemine
+
+```bash
+export COLUMNS=10000
+ps -axu | grep daemon | tr -s ' ' | cut -d ' ' -f11- | grep daemon | grep -v '^grep '
+```
+
+`tr` surub järjestikused tühikud kokku ja `cut` jätab alles programminimed koos parameetritega. Alles jäävad ainult `daemon`-it sisaldavad käsuread, otsimise `grep`-protsessid eemaldatakse. `COLUMNS=10000` annab pikkade käsuridade jaoks piisava väljundilaiuse.
+
+![Programminimed ja parameetrid](ulesanne5-3.png)
+
 ## Ülesanne 5-5 – Windowsi sõnumid
 
 Logifail: [teatedOut.txt](teatedOut.txt). Logis on näha hiireklikke, akna maksimeerimine, suuruse taastamine ja sulgemine.
