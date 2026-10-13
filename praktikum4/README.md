@@ -48,7 +48,7 @@ Windowsi turve soovitab Microsofti kontoga sisse logida, et suurendada turvalisu
 
 ## Ülesanne 4-8 – Administraatori parooli küsimine
 
-Lubasin tavakasutajal administraatori õigusi küsida. Thonny kõigile kasutajatele paigaldamisel küsiti `reevo` konto parooli.
+Lubasin tavakasutajal administraatori õigusi küsida. Thonny kõigile kasutajatele paigaldamisel küsiti `reevo` konto parooli. Pärast paigaldust oli käivitusfail olemas asukohas `C:\Program Files\Thonny\thonny.exe`. Programmi avanemist ei õnnestunud virtuaalmasina hangumise tõttu kontrollida.
 
 ![Thonny küsib administraatori parooli](pildid/08-thonny-administraatori-parool.png)
 ## Ülesanne 4-9 – Ebaõnnestunud sisselogimine
@@ -61,5 +61,6 @@ Turbelogis on sündmus `4625`: kasutaja `tootaja1` sisselogimine arvutisse `Veel
 Registriväärtus `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\DisplayLastLogonInfo` on `1`. Uuesti sisse logides kuvati eelmise sisselogimise kuupäev ja kellaaeg.
 
 ![Viimase sisselogimise info](pildid/10-viimase-sisselogimise-info.png)
+
 
 
