@@ -1,0 +1,9 @@
++ id
+uid=1000(reevo) gid=1000(reevo) groups=1000(reevo),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),111(lpadmin),114(lxd),1004(majasisene)
++ stat -c '%A %U %G %n' /tmp/majasiseseks-kasutamiseks /tmp/majasiseseks-kasutamiseks/uusfail.txt
+d-----x--- root majasisene /tmp/majasiseseks-kasutamiseks
+----r----- peeter majasisene /tmp/majasiseseks-kasutamiseks/uusfail.txt
++ cat /tmp/majasiseseks-kasutamiseks/uusfail.txt
+See on majasisene fail. Faili loeb grupi liige.
++ ls -la /tmp/majasiseseks-kasutamiseks
+ls: cannot open directory '/tmp/majasiseseks-kasutamiseks': Permission denied

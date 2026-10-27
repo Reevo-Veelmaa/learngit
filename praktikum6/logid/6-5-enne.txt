@@ -1,0 +1,6 @@
++ id
+uid=1003(jukuisa) gid=1003(jukuisa) groups=1003(jukuisa)
++ cat hinded.txt
+cat: hinded.txt: Permission denied
++ ./hindedJukul
+fopen(): Permission denied

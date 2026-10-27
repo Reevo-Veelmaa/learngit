@@ -1,0 +1,27 @@
++ printf 'Reevo Veelmaa\n'
++ chmod 000 /tmp/kaust/minufail.txt /tmp/kaust
++ cat /tmp/kaust/minufail.txt
+cat: /tmp/kaust/minufail.txt: Permission denied
++ chmod 100 /tmp/kaust
++ cat /tmp/kaust/minufail.txt
+cat: /tmp/kaust/minufail.txt: Permission denied
++ chmod 400 /tmp/kaust/minufail.txt
++ stat -c '%a %n' /tmp/kaust /tmp/kaust/minufail.txt
+100 /tmp/kaust
+400 /tmp/kaust/minufail.txt
++ cat /tmp/kaust/minufail.txt
+Reevo Veelmaa
++ chmod 000 /tmp/kaust/minufail.txt
++ rm -f /tmp/kaust/minufail.txt
+rm: cannot remove '/tmp/kaust/minufail.txt': Permission denied
++ chmod 200 /tmp/kaust
++ rm -f /tmp/kaust/minufail.txt
+rm: cannot remove '/tmp/kaust/minufail.txt': Permission denied
++ chmod 300 /tmp/kaust
++ stat -c '%a %n' /tmp/kaust /tmp/kaust/minufail.txt
+300 /tmp/kaust
+0 /tmp/kaust/minufail.txt
++ rm -f /tmp/kaust/minufail.txt
++ test '!' -e /tmp/kaust/minufail.txt
++ echo 'Fail kustutatud'
+Fail kustutatud

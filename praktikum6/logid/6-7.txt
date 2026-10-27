@@ -1,0 +1,9 @@
+drwxrwxrwt 2 opetaja opetaja 40 Oct 27 22:52 /tmp/yhiskaust
+Kustutaja: jukuisa
+rm: remove write-protected regular empty file '/tmp/yhiskaust/peeter-jukuisa.txt'? rm: cannot remove '/tmp/yhiskaust/peeter-jukuisa.txt': Operation not permitted
+Kustutaja: peeter
+Kustutamine onnistus
+Kustutaja: opetaja
+rm: remove write-protected regular empty file '/tmp/yhiskaust/peeter-opetaja.txt'? Kustutamine onnistus
+Kustutaja: root
+Kustutamine onnistus

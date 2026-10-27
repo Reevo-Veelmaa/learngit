@@ -1,0 +1,11 @@
++ whoami
+jukuisa
++ ls -l hinded.txt hindedJukul
+-rw------- 1 opetaja opetaja   126 Oct 27 22:52 hinded.txt
+-rwsr-xr-x 1 opetaja opetaja 16224 Oct 27 22:52 hindedJukul
++ cat hinded.txt
+cat: hinded.txt: Permission denied
++ ./hindedJukul
+Juku matemaatika 3-
+Juku kehaline kasvatus 5
+Juku eesti keel 3

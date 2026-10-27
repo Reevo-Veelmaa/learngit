@@ -1,0 +1,22 @@
++ id
+uid=1001(peeter) gid=1001(peeter) groups=1001(peeter),1004(majasisene),1005(ylisalajane),1006(direktor)
++ python3 -c 'from pathlib import Path; p=Path("hinded.txt"); p.write_text(p.read_text().replace("Juku matemaatika 3-", "Juku matemaatika 5"))'
++ ls -la hinded.txt
+-rw-rw----+ 1 opetaja opetaja 125 Oct 27 22:53 hinded.txt
++ getfacl hinded.txt
+# file: hinded.txt
+# owner: opetaja
+# group: opetaja
+user::rw-
+group::---
+group:direktor:rw-
+mask::rw-
+other::---
+
++ cat hinded.txt
+Juku matemaatika 5
+Mari matemaatika 5+
+Juku kehaline kasvatus 5
+Mari kehaline kasvatus 4
+Juku eesti keel 3
+Mari eesti keel 5

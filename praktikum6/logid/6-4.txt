@@ -1,0 +1,9 @@
++ id
+uid=1000(reevo) gid=1000(reevo) groups=1000(reevo),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),111(lpadmin),114(lxd),1004(majasisene)
++ ls -la
+total 4
+d---r-x---  2 root   majasisene  60 Oct 27 22:52 .
+drwxrwxrwt 19 root   root       480 Oct 27 22:52 ..
+----r-----  1 peeter majasisene  48 Oct 27 22:52 uusfail.txt
++ cat uusfail.txt
+See on majasisene fail. Faili loeb grupi liige.

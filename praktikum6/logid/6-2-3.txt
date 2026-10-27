@@ -1,0 +1,16 @@
++ printf '#!/bin/sh\necho "Skript tootab!"\n'
++ chmod 111 skript.sh
++ ./skript.sh
+/bin/sh: 0: cannot open ./skript.sh: Permission denied
++ chmod 500 skript.sh
++ ./skript.sh
+Skript tootab!
++ id
+uid=1000(reevo) gid=1000(reevo) groups=1000(reevo),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),111(lpadmin),114(lxd),1004(majasisene)
++ umask 037
++ touch maskifail
++ mkdir maskikaust
++ ls -ld maskifail maskikaust
+-rw-r----- 1 reevo reevo    0 Oct 27 22:52 maskifail
+drwxr----- 2 reevo reevo 4096 Oct 27 22:52 maskikaust
++ umask 0002

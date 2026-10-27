@@ -1,0 +1,15 @@
++ chattr +i /home/reevo/praktikum6/testfail-2
++ lsattr /home/reevo/praktikum6/testfail-2
+----i---------e------- /home/reevo/praktikum6/testfail-2
++ runuser -u reevo -- sh -c 'echo lisa >> /home/reevo/praktikum6/testfail-2'
+sh: 1: cannot create /home/reevo/praktikum6/testfail-2: Operation not permitted
++ true
++ sh -c 'echo lisa >> /home/reevo/praktikum6/testfail-2'
+sh: 1: cannot create /home/reevo/praktikum6/testfail-2: Operation not permitted
++ true
++ rm /home/reevo/praktikum6/testfail-2
+rm: cannot remove '/home/reevo/praktikum6/testfail-2': Operation not permitted
++ true
++ chattr -i /home/reevo/praktikum6/testfail-2
++ runuser -u reevo -- rm /home/reevo/praktikum6/testfail-2
++ set +x
